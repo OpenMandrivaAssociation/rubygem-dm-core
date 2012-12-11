@@ -5,12 +5,15 @@ Summary:	An Object/Relational Mapper for Ruby
 Name:		rubygem-%{rbname}
 
 Version:	1.2.0
-Release:	1
+Release:	2
 Group:		Development/Ruby
 License:	GPLv2+ or Ruby
 URL:		http://github.com/datamapper/dm-core
 Source0:	http://gems.rubyforge.org/gems/%{rbname}-%{version}.gem
+Source100:	%{name}.rpmlintrc
 BuildRequires:	rubygems 
+#BuildRequires:  rubygem-addressable >= 2.3.2
+#Requires:		rubygem-addressable >= 2.3.2
 BuildArch:	noarch
 
 %description
@@ -86,3 +89,10 @@ Documents, RDoc & RI documentation for %{name}.
 %{ruby_gemdir}/doc/%{rbname}-%{version}
 %{ruby_gemdir}/gems/%{rbname}-%{version}/*.rdoc
 %{ruby_gemdir}/gems/%{rbname}-%{version}/LICENSE
+
+
+%changelog
+* Thu Jan 26 2012 Alexander Khrukin <akhrukin@mandriva.org> 1.2.0-1
++ Revision: 769111
+- imported package rubygem-dm-core
+
