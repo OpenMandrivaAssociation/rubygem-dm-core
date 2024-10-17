@@ -8,7 +8,7 @@ Version:	1.2.0
 Release:	3
 Group:		Development/Ruby
 License:	GPLv2+ or Ruby
-URL:		http://github.com/datamapper/dm-core
+URL:		https://github.com/datamapper/dm-core
 Source0:	http://gems.rubyforge.org/gems/%{rbname}-%{version}.gem
 Source100:	%{name}.rpmlintrc
 BuildRequires:	rubygems 
